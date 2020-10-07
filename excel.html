@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment - Randy Anderson</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="excel.html">Excel</a></li>
+    </header>
+    <hr>
+    <main>
+        <div id="main-content">
+            <h1 id="first">Excel Functions</h1>
+            <form id="main-form">
+                Enter your numbers separated by spacess
+                <input type="text" id="numbers" size="25" maxlength="30">
+                <br>
+                <input type="radio" id="autosum" name="calc" value="autosum" checked>
+                <label for="autosum">AutoSum</label><br>
+                <input type="radio" id="average" name="calc" value="average">
+                <label for="average">Average</label><br>
+                <input type="radio" id="max" name="calc" value="max">
+                <label for="max">Max</label><br>
+                <input type="radio" id="min" name="calc" value="min">
+                <label for="min">Min</label><br>
+                <br>
+                <input type="button" value="Calculate" onclick="return myExcelFuns()">
+                <br>
+            </form>
+            <p>Result:<span id="result"></span></p>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
