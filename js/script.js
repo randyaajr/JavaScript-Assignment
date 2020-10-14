@@ -39,10 +39,22 @@ function myExcelFuns() {
     var inputDataStr = document.getElementById("numbers").value;
 
 
+
     inputDataStr.trim();
     console.log(inputDataStr);
 
     var inputDataArray = inputDataStr.split(" ");
+
+
+    if (document.getElementById("arrSum").checked) {
+        total += inputDataArray[i];
+    } else if (document.getElementById("arrAvg").checked) {
+        total === inputDataArray[i];
+    } else if (document.getElementById("arrMax").checked) {
+        total = Math.max([i]);
+    } else if (document.getElementById("arrMin").checked) {
+        total = Math.min([i]);
+    }
 
     console.log(inputDataArray);
 
@@ -56,4 +68,4 @@ function myExcelFuns() {
     document.getElementById("result").innerHTML = total;
 
     return false;
-}
+};
