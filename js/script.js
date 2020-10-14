@@ -49,11 +49,11 @@ function myExcelFuns() {
     if (document.getElementById("arrSum").checked) {
         total += inputDataArray[i];
     } else if (document.getElementById("arrAvg").checked) {
-        total === inputDataArray[i];
+        total += inputDataArray[i];
     } else if (document.getElementById("arrMax").checked) {
-        total = Math.max([i]);
+        total += Math.max([i]);
     } else if (document.getElementById("arrMin").checked) {
-        total = Math.min([i]);
+        total += Math.min([i]);
     }
 
     console.log(inputDataArray);
