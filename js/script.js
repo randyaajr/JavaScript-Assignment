@@ -46,16 +46,6 @@ function myExcelFuns() {
     var inputDataArray = inputDataStr.split(" ");
 
 
-    if (document.getElementById("arrSum").checked) {
-        total += inputDataArray[i];
-    } else if (document.getElementById("arrAvg").checked) {
-        total += inputDataArray[i];
-    } else if (document.getElementById("arrMax").checked) {
-        total += Math.max([i]);
-    } else if (document.getElementById("arrMin").checked) {
-        total += Math.min([i]);
-    }
-
     console.log(inputDataArray);
 
     var total = 0;
@@ -63,6 +53,16 @@ function myExcelFuns() {
         if (inputDataArray[i] != "") {
             total += parseFloat(inputDataArray[i]);
         }
+    }
+
+    if (document.getElementById("arrSum").checked) {
+        total + inputDataArray[i];
+    } else if (document.getElementById("arrAvg").checked) {
+        total++/ inputDataArray[i];
+    } else if (document.getElementById("arrMax").checked) {
+        total++ + Math.max([i]);
+    } else if (document.getElementById("arrMin").checked) {
+        total = Math.min([i]);
     }
 
     document.getElementById("result").innerHTML = total;
