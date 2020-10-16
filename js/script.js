@@ -36,29 +36,29 @@ function userForm() {
 
 //Excels section
 function myExcelFuns() {
-    var inputStr = document.getElementById("numbers").value;
+    var numberStr = document.getElementById("numbers").value;
 
 
 
-    inputStr.trim();
-    console.log(inputStr);
+    numberStr.trim();
+    console.log(numberStr);
 
-    var inputArray = inputStr.split(" ");
+    var numberArr = numberStr.split(" ");
 
 
-    console.log(inputArray);
+    console.log(numberArr);
 
     var total = 0;
-    for (var i = 0; i < inputArray.length; i++) {
-        if (inputArray[i] != "") {
-            total += parseFloat(inputArray[i]);
+    for (var i = 0; i < numberArr.length; i++) {
+        if (numberArr[i] != "") {
+            total += parseFloat(numberArr[i]);
         }
     }
 
     if (document.getElementById("arrSum").checked) {
-        total + inputArray[i];
+        total + numberArr[i];
     } else if (document.getElementById("arrAvg").checked) {
-        total /= inputArray[i];
+        total /= numberArr[i];
     } else if (document.getElementById("arrMax").checked) {
         total *= Math.max([...i]);
     } else if (document.getElementById("arrMin").checked) {
@@ -69,7 +69,3 @@ function myExcelFuns() {
 
     return false;
 };
-
-function newFunction() {
-    return [1, 3, 5, 6, 2, 4, 7, 8, 9];
-}
