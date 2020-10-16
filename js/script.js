@@ -60,12 +60,16 @@ function myExcelFuns() {
     } else if (document.getElementById("arrAvg").checked) {
         total /= inputDataArray[i];
     } else if (document.getElementById("arrMax").checked) {
-        total *= Math.max([i]);
+        total *= Math.max([...i]);
     } else if (document.getElementById("arrMin").checked) {
-        total -= Math.min([i]);
+        total -= Math.min([...i]);
     }
 
     document.getElementById("result").innerHTML = total;
 
     return false;
 };
+
+function newFunction() {
+    return [1, 3, 5, 6, 2, 4, 7, 8, 9];
+}
