@@ -47,25 +47,30 @@ function myExcelFuns() {
 
     console.log(numberArr);
 
-    var result;
 
-    var arraySum = 0;
-    var arrayAvg = 0;
-    var arrayMax = 0;
-    var arrayMin = 0;
+
 
     var total = 0;
     for (var i = 0; i < numberArr.length; i++) {
         if (numberArr[i] != "") {
             total += parseFloat(numberArr[i]);
-        } else if (document.getElementById("arrSum").checked) {
+        }
+    }
+
+
+    var arraySum = 0;
+    var arrayAvg = 0;
+    var arrayMax = 0;
+    var arrayMin = 0;
+    for (var i = 0; i < numberArr.length; i++) {
+        if (document.getElementById("arrSum").checked) {
             result + arraySum;
         } else if (document.getElementById("arrAvg").checked) {
-            result += arrayAvg;
+            result / arrayAvg;
         } else if (document.getElementById("arrMax").checked) {
-            result * arrayMax.Math([...numberArr]);
+            result * arrayMax.max();
         } else if (document.getElementById("arrMin").checked) {
-            result - arrayMin.min([...numberArr]);
+            result - arrayMin.min();
         } else {
             result = 0;
         }
