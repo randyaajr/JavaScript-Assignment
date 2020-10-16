@@ -40,29 +40,35 @@ function myExcelFuns() {
 
 
 
-    numberStr.trim();
+    numberStr = numberStr.trim();
     console.log(numberStr);
 
     var numberArr = numberStr.split(" ");
 
-
     console.log(numberArr);
+
+    var result;
+
+    var arraySum = 0;
+    var arrayAvg = 0;
+    var arrayMax = 0;
+    var arrayMin = 0;
 
     var total = 0;
     for (var i = 0; i < numberArr.length; i++) {
         if (numberArr[i] != "") {
             total += parseFloat(numberArr[i]);
+        } else if (document.getElementById("arrSum").checked) {
+            result + arraySum;
+        } else if (document.getElementById("arrAvg").checked) {
+            result += arrayAvg;
+        } else if (document.getElementById("arrMax").checked) {
+            result * arrayMax.Math([...numberArr]);
+        } else if (document.getElementById("arrMin").checked) {
+            result - arrayMin.min([...numberArr]);
+        } else {
+            result = 0;
         }
-    }
-
-    if (document.getElementById("arrSum").checked) {
-        total + numberArr[i];
-    } else if (document.getElementById("arrAvg").checked) {
-        total /= numberArr[i];
-    } else if (document.getElementById("arrMax").checked) {
-        total *= Math.max([...i]);
-    } else if (document.getElementById("arrMin").checked) {
-        total -= Math.min([...i]);
     }
 
     document.getElementById("result").innerHTML = total;
