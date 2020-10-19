@@ -76,8 +76,8 @@
          this empty variable first, then use it inside each if condition and else block
  *  There is more than one way to get the selected radio button option, one of them for example, is to
     give each radio button control an “id” in your HTML code:
-    * <input type="radio" name="excel" id="sum">AutoSum
-    * <input type="radio" name="excel" id="avg">Average 
+    * `<input type="radio" name="excel" id="sum">AutoSum`
+    * `<input type="radio" name="excel" id="avg">Average` 
  * At the end of all the if else blocks (4 blocks), use the getElementById() method to print your result (the
    value of the result variable) into your specific HTML element.
 
