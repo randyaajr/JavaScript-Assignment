@@ -10,78 +10,81 @@
 
 <body>
     <header>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="excel.html">Excel</a></li>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="excel.html">Excel</a></li>
+        </ul>
     </header>
     <hr>
     <main>
         <div>
-            <fieldset>
-                <h3>Please fill out this form</h3><br>
-                <h5>With your details</h5>
+            <div id="main-content">
+                <fieldset>
+                    <h3>Please fill out this form</h3><br>
+                    <h5>With your details</h5>
 
-                <form name="mainform">
-                    <div>
+                    <form name="mainform">
                         <div>
-                            <label for="fname">First Name</label>
-                            <input type="text" name="fname" id="fname" placeholder="First Name">
-                        </div>
+                            <div>
+                                <label for="fname">First Name</label>
+                                <input type="text" name="fname" id="fname" placeholder="First Name" required />
+                            </div>
 
-                    </div>
-                    <div>
-                        <label for="lname">Last Name</label>
-                        <input type="text" name="lname" id="lname" placeholder="Last Name">
-                    </div>
-                    <div>
-                        <div>
-                            <label for="email">Email Address</label>
-                            <input type="text" name="email" id="emailAddress" placeholder="Email Address">
                         </div>
                         <div>
-                            <label for="address">Address</label>
-                            <input type="text" name="address" id="address" placeholder="Address">
+                            <label for="lname">Last Name</label>
+                            <input type="text" name="lname" id="lname" placeholder="Last Name">
                         </div>
                         <div>
-                            <label for="city">City</label>
-                            <input type="text" name="city" id="city" placeholder="City">
+                            <div>
+                                <label for="email">Email Address</label>
+                                <input type="text" name="email" id="emailAddress" placeholder="Email Address">
+                            </div>
+                            <div>
+                                <label for="address">Address</label>
+                                <input type="text" name="address" id="address" placeholder="Address">
+                            </div>
+                            <div>
+                                <label for="city">City</label>
+                                <input type="text" name="city" id="city" placeholder="City">
+                            </div>
+                            <div>
+                                <label for="province">Province</label>
+                                <input type="text" name="province" id="province" placeholder="Province">
+                                </select>
+                            </div>
                         </div>
-                        <div>
-                            <label for="province">Province</label>
-                            <input type="text" name="province" id="province" placeholder="Province">
-                            </select>
-                        </div>
-                    </div>
-                    <div class="membership">
-                        <div>
-                            <input name="membership" type="radio" value="member1" checked>
-                            <label for="premium">
+                        <div class="membership">
+                            <div>
+                                <input name="membership" type="radio" value="member1" checked>
+                                <label for="premium">
                           Premium Membership
                         </label>
-                        </div>
-                        <div>
-                            <input name="membership" type="radio" value="member2">
-                            <label for="standard">
+                            </div>
+                            <div>
+                                <input name="membership" type="radio" value="member2">
+                                <label for="standard">
                           Standard Membership
                         </label>
-                        </div>
-                        <div>
-                            <input name="membership" type="radio" value="member3">
-                            <label for="basic">
+                            </div>
+                            <div>
+                                <input name="membership" type="radio" value="member3">
+                                <label for="basic">
                           Basic Membership
                         </label>
+                            </div>
                         </div>
-                    </div>
-                    <input type="button" value="Submit" onclick="userForm()">
-                    <input type="reset">
-                </form>
-            </fieldset>
-            <div>
-                Full Name: <span id="fullName"></span>
-                <br> Email: <span id="email-address"></span>
-                <br> Address: <span id="address-in"></span>
-                <br> Membership: <span id="memberships"></span>
+                        <input type="button" value="Submit" onclick="userForm()">
+                        <input type="reset">
+                    </form>
+                </fieldset>
+                <div class="answer">
+                    Full Name: <span id="fullName"></span>
+                    <br> Email: <span id="email-address"></span>
+                    <br> Address: <span id="address-in"></span>
+                    <br> Membership: <span id="memberships"></span>
+                </div>
             </div>
-
         </div>
     </main>
     <script src="js/script.js"></script>
