@@ -14,6 +14,16 @@ header {
     padding-bottom: 1.5rem;
 }
 
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
 a {
     letter-spacing: 0.2rem;
     text-shadow: 2px 1px 10px #ff0000;
@@ -34,5 +44,79 @@ hr {
 main {
     color: #fafafa;
     letter-spacing: 0.1rem;
-    padding: 1.5rem 0 0 1.5rem;
+    padding: 1.5rem;
+    flex-flow: column;
+    display: grid;
+}
+
+fieldset {
+    padding: 2rem;
+    display: inline;
+    border: 5px solid rgba(255, 255, 255, 0.157);
+    border-radius: 1rem;
+}
+
+.answer {
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+
+/*********************************************************************************************input*/
+
+input[name="membership"] {
+    margin-bottom: ;
+}
+
+
+/*********************************************************************************************buttons*/
+
+input[type="button"] {
+    color: #ffffff80;
+    background-color: #00404b;
+    padding: 0.25rem;
+    margin-top: 2rem;
+    border-radius: 0.25rem;
+}
+
+input[type="reset"] {
+    color: #ffffff80;
+    background-color: #00404b;
+    padding: 0.25rem;
+    margin-top: 2rem;
+    border-radius: 0.25rem;
+}
+
+
+/*********************************************************************************************Hover*/
+
+input[type="button"]:hover {
+    color: #fafafa;
+    background-color: rgb(54, 54, 54);
+    text-shadow: 1px 1px 5px #ff0000;
+}
+
+input[type="reset"]:hover {
+    color: #fafafa;
+    background-color: rgb(54, 54, 54);
+    text-shadow: 1px 1px 5px #ff0000;
+}
+
+a:hover {
+    color: #ff0000;
+    text-shadow: 1px 1px 5px #ffffffa6;
+}
+
+
+/*********************************************************************************************Output result*/
+
+#result,
+#fullName,
+#email-address,
+#address-in,
+#memberships {
+    letter-spacing: 0.2rem;
+    text-shadow: 1px 1px 5px #ff0000;
+    color: #ffffff;
+    padding-left: 1rem;
 }
