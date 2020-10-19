@@ -5,6 +5,7 @@
 *This assignment demonstrats my skills using HTML form elements and JavaScript topics such as: Functions, parsing the DOM, form validation, conditional statements, debugging methods, formulas and Math Object.*
 
 ### Assingment Requirements
+* File Structure
  * Create two simple html pages
    - [x] index.html contains an HTML form that needs to be validated by JavaScript when submitted.
    - [x] excel.html contains a simple form to let the user enter their numeric values then you will use
@@ -25,6 +26,23 @@
    e.g: JS-Assignment-Martin
 
    ![File structure](/img/dom.PNG)
+
+ * You will create a web form to ask the user to enter the following information using the appropriate
+  HTML5 form controls (elements) to represent each item in the list below:
+   - [x] First Name ➔ input field of type text
+   - [x] Last Name ➔ input field of type text
+   - [x] Email Address ➔ input field of type email
+   - [x] Address ➔ input field of type text
+   - [x] City ➔ input field of type text
+   - [x] Province ➔ input field of type text
+   - [x] Radio buttons with the following options (one of these options should be selected as default,
+         usually the first one): 
+           * Premium Membership
+           * Standard Membership
+           * Basic Membership
+   - [x] Send button to call (trigger) a function named “userForm()”, which you will have to create, will
+         take all the form information (user’s input)
+   - [x] Cancel button to reset the form elements 
 
 ### Built With
 This section lists the languages I used to built this project.
