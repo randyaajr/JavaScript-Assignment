@@ -43,11 +43,13 @@ This section lists the languages I used to built this project.
 
 ## Acknowledgements
 
-* [Stack Overflow - Finding the average of an array](https://stackoverflow.com/questions/29544371/finding-the-average-of-an-array-using-js)
-* [Codeburst.io - min, max, sum and average](https://codeburst.io/javascript-arrays-finding-the-minimum-maximum-sum-average-values-f02f1b0ce332)
-* [Team Treehouse - finding min and max in an array](https://teamtreehouse.com/community/finding-average-minimum-and-maximum-value-in-an-array)
-* [W3 Schools - Math.min()](https://www.w3schools.com/jsref/jsref_min.asp)
-* [W3 Schools - Math.max()](https://www.w3schools.com/jsref/jsref_max.asp)
-* [MDN web docs - Math.min()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min)
-* [MDN web docs - Math.max()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max)
-* [DigitalOcean - map()](https://www.digitalocean.com/community/tutorials/4-uses-of-javascripts-arraymap-you-should-know)
+* [Stack Overflow - Finding the average of an array](https://stackoverflow.com/questions/29544371/finding-the-average-of-an-array-using-js){:target="_blank" rel="noopener"}
+* [Codeburst.io - min, max, sum and average](https://codeburst.io/javascript-arrays-finding-the-minimum-maximum-sum-average-values-f02f1b0ce332){:target="_blank" rel="noopener"}
+* [Team Treehouse - finding min and max in an array](https://teamtreehouse.com/community/finding-average-minimum-and-maximum-value-in-an-array){:target="_blank" rel="noopener"}
+* [W3 Schools - Math.min()](https://www.w3schools.com/jsref/jsref_min.asp){:target="_blank" rel="noopener"}
+* [W3 Schools - Math.max()](https://www.w3schools.com/jsref/jsref_max.asp){:target="_blank" rel="noopener"}
+* [MDN web docs - Math.min()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min){:target="_blank" rel="noopener"}
+* [MDN web docs - Math.max()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max){:target="_blank" rel="noopener"}
+* [DigitalOcean - map()](https://www.digitalocean.com/community/tutorials/4-uses-of-javascripts-arraymap-you-should-know){:target="_blank" rel="noopener"}
+
+_config.yml
