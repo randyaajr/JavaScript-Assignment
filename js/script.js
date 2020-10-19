@@ -43,7 +43,7 @@ function myExcelFuns() {
     numberStr = numberStr.trim();
     console.log(numberStr);
 
-    var numberArr = numberStr.split(" ");
+    var numberArr = numberStr.split(" ").map(Number);
 
     console.log(numberArr);
 
@@ -57,26 +57,45 @@ function myExcelFuns() {
         }
     }
 
-
-    var arraySum = 0;
-    var arrayAvg = 0;
-    var arrayMax = 0;
-    var arrayMin = 0;
-    for (var i = 0; i < numberArr.length; i++) {
-        if (document.getElementById("arrSum").checked) {
-            result + arraySum;
-        } else if (document.getElementById("arrAvg").checked) {
-            result / arrayAvg;
-        } else if (document.getElementById("arrMax").checked) {
-            result * arrayMax.max();
-        } else if (document.getElementById("arrMin").checked) {
-            result - arrayMin.min();
-        } else {
-            result = 0;
-        }
+    var result;
+    if (document.getElementById("arrSum").checked) {
+        result = 0;
+        for (var i = 0; i < numberArr.length; i++)
+            if (numberArr[i] != "") {
+                result = result + parseFloat(numberArr[i]);
+            }
+    } else if (document.getElementById("arrAvg").checked) {
+        result = 0;
+        for (var i = 0; i < numberArr.length; i++)
+            if (numberArr[i] != "") {
+                result = result += numberArr[i] / parseFloat(numberArr[i]);
+            }
+    } else if (document.getElementById("arrMax").checked) {
+        result = 0;
+        for (var i = 0; i < numberArr.length; i++)
+            if (numberArr[i] != "") {
+                result = Math.max(...numberArr);
+            }
+    } else if (document.getElementById("arrMin").checked) {
+        result = 0;
+        for (var i = 0; i < numberArr.length; i++)
+            if (numberArr[i] != "") {
+                result = Math.min(...numberArr);
+            }
+    } else {
+        result = 0;
     }
 
-    document.getElementById("result").innerHTML = total;
+
+    document.getElementById("result").innerHTML = result;
 
     return false;
+
+    /*
+    1. Fixed the code that puts the result into the HTML
+    2. Fixed cpde so when splitted, array converts into a number
+    3. Untilized Math.max(), Math.min() and spread syntax (...).
+    4. Reworked the calculation and assigned the values to each variable
+    */
+
 };
