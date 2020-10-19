@@ -22,4 +22,6 @@
    folder named: “JS-Assignment-YourFirstName”
    e.g: JS-Assignment-Martin
 
+   ![File structure](assets/img/dom.PNG)
+
 
