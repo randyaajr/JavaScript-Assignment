@@ -1,6 +1,8 @@
 # JavaScript Assignment
 -----------------------
 
+## Project Discription
+This assignment demonstrats my skills using HTML form elements and JavaScript topics such as: Functions, parsing the DOM, form validation, conditional statements, debugging methods, formulas and Math Object.
 
 ### Assingment Requirements
  * Create two simple html pages
@@ -23,5 +25,21 @@
    e.g: JS-Assignment-Martin
 
    ![File structure](/img/dom.PNG)
+
+### Built With
+This section lists the languages I used to built this project.
+* [HTML](https://en.wikipedia.org/wiki/HTML)
+* [CSS](https://en.wikipedia.org/wiki/CSS)
+* [JavaScript](https://www.javascript.com/)
+
+## Usage
+
+**This project is downloadabe. If you would like to download this repo for personal use, feel free. Steps below:**
+
+1. Click the green "Code" button above the file section.
+2. Click "Download Zip".
+3. Open your downloads file and extract.
+4. You're set!
+
 
 
