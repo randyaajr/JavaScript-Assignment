@@ -58,7 +58,7 @@ function myExcelFuns() {
                 result = result + parseFloat(numberArr[i]);
             }
     } else if (document.getElementById("arrAvg").checked) {
-        result = 1;
+        result = 0;
         for (var i = 0; i < numberArr.length; i++)
             if (numberArr[i] != "") {
                 result = result + numberArr[i] / parseFloat(numberArr[i]);
