@@ -70,4 +70,9 @@ function myExcelFuns() {
     return false;
 };
 
-//Validation
+//Popup
+
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
