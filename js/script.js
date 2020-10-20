@@ -33,37 +33,40 @@ function myExcelFuns() {
     var numberArr = numberStr.split(" ");
     var result = 0;
 
-    if (document.getElementById("arrSum").checked) {
+    if (numberArr != "") {
+        if (document.getElementById("arrSum").checked) {
 
-        for (var i = 0; i < numberArr.length; i++)
-            if (numberArr[i] != "") {
-                result = result + parseFloat(numberArr[i]);
-            }
-    } else if (document.getElementById("arrAvg").checked) {
+            for (var i = 0; i < numberArr.length; i++)
+                if (numberArr[i] != "") {
+                    result = result + parseFloat(numberArr[i]);
+                }
+        } else if (document.getElementById("arrAvg").checked) {
 
-        for (var i = 0; i < numberArr.length; i++)
-            if (numberArr[i] != "") {
-                result = result + parseFloat(numberArr[i]);
-            }
-        result = result / numberArr.length;
-    } else if (document.getElementById("arrMax").checked) {
+            for (var i = 0; i < numberArr.length; i++)
+                if (numberArr[i] != "") {
+                    result = result + parseFloat(numberArr[i]);
+                }
+            result = result / numberArr.length;
+        } else if (document.getElementById("arrMax").checked) {
 
-        for (var i = 0; i < numberArr.length; i++)
-            if (numberArr[i] != "") {
-                result = Math.max(...numberArr);
-            }
-    } else if (document.getElementById("arrMin").checked) {
+            for (var i = 0; i < numberArr.length; i++)
+                if (numberArr[i] != "") {
+                    result = Math.max(...numberArr);
+                }
+        } else if (document.getElementById("arrMin").checked) {
 
-        for (var i = 0; i < numberArr.length; i++)
-            if (numberArr[i] != "") {
-                result = Math.min(...numberArr);
-            }
+            for (var i = 0; i < numberArr.length; i++)
+                if (numberArr[i] != "") {
+                    result = Math.min(...numberArr);
+                }
+        } else {
+
+            return 0;
+        }
+        document.getElementById("result").innerHTML = result;
     } else {
-
-        return 0;
+        alert("Please enter a numeric value with spaces to proceed.");
     }
-    document.getElementById("result").innerHTML = result;
-
     return false;
 };
 
