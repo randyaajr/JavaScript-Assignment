@@ -38,9 +38,16 @@ function userForm() {
 function myExcelFuns() {
     var numberStr = document.getElementById("numbers").value;
 
+
+
     numberStr = numberStr.trim();
+    console.log(numberStr);
+
     var numberArr = numberStr.split(" ");
+
     console.log(numberArr);
+
+
 
 
     var result;
