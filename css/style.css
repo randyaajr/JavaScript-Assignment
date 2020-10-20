@@ -150,9 +150,6 @@ footer {
     position: relative;
     display: inline-block;
     cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
 }
 
@@ -160,7 +157,7 @@ footer {
     visibility: hidden;
     width: 160px;
     background-color: rgb(51, 51, 51);
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     border-radius: 6px;
     padding: 8px 0;
