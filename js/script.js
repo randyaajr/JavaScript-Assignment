@@ -22,7 +22,8 @@ function userForm() {
     } else {
         document.getElementById("memberships").innerHTML = "Basic Membership";
     }
-}
+    return false;
+};
 
 //Excels section
 function myExcelFuns() {
@@ -62,4 +63,8 @@ function myExcelFuns() {
         return 0;
     }
     document.getElementById("result").innerHTML = result;
+
+    return false;
 };
+
+//Validation
