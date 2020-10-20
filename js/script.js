@@ -37,46 +37,39 @@ function userForm() {
 //Excels section
 function myExcelFuns() {
     var numberStr = document.getElementById("numbers").value;
-
-
-
     numberStr = numberStr.trim();
-    console.log(numberStr);
 
     var numberArr = numberStr.split(" ");
+    var result = 0;
 
-    console.log(numberArr);
-
-
-
-
-    var result;
     if (document.getElementById("arrSum").checked) {
-        result = 0;
+
         for (var i = 0; i < numberArr.length; i++)
             if (numberArr[i] != "") {
                 result = result + parseFloat(numberArr[i]);
             }
     } else if (document.getElementById("arrAvg").checked) {
-        result = 0;
+
         for (var i = 0; i < numberArr.length; i++)
             if (numberArr[i] != "") {
-                result = result + numberArr[i] / parseFloat(numberArr[i]);
+                result = result + parseFloat(numberArr[i]);
             }
+        result = result / numberArr.length;
     } else if (document.getElementById("arrMax").checked) {
-        result = 0;
+
         for (var i = 0; i < numberArr.length; i++)
             if (numberArr[i] != "") {
                 result = Math.max(...numberArr);
             }
     } else if (document.getElementById("arrMin").checked) {
-        result = 0;
+
         for (var i = 0; i < numberArr.length; i++)
             if (numberArr[i] != "") {
                 result = Math.min(...numberArr);
             }
     } else {
-        result = 0;
+
+        return false;
     }
 
 
