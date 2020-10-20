@@ -106,4 +106,3 @@ This section lists the languages I used to built this project.
 * [W3 Schools - Math.max()](https://www.w3schools.com/jsref/jsref_max.asp)
 * [MDN web docs - Math.min()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min)
 * [MDN web docs - Math.max()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max)
-* [DigitalOcean - map()](https://www.digitalocean.com/community/tutorials/4-uses-of-javascripts-arraymap-you-should-know)
