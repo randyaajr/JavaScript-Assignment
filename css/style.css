@@ -12,6 +12,7 @@ body {
 
 header {
     padding-bottom: 1.5rem;
+    background-image: linear-gradient(to left, rgba(85, 0, 0, 0.356), rgba(51, 51, 51, 0.486));
 }
 
 ul {
@@ -53,6 +54,7 @@ fieldset {
     display: inline;
     border: 5px solid rgba(255, 255, 255, 0.157);
     border-radius: 1rem;
+    background-image: linear-gradient(to left, rgba(51, 51, 51, 0.486), rgba(85, 0, 0, 0.356))
 }
 
 .answer {
@@ -115,4 +117,19 @@ a:hover {
     text-shadow: 1px 1px 5px #ff0000;
     color: #ffffff;
     padding-left: 1rem;
+}
+
+
+/*********************************************************************************************Footer*/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: linear-gradient(to left, rgba(85, 0, 0, 0.356), rgba(51, 51, 51, 0.486));
+    letter-spacing: 0.2rem;
+    text-shadow: 2px 1px 10px #ff0000;
+    color: white;
+    text-align: center;
 }
