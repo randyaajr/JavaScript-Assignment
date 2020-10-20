@@ -48,20 +48,14 @@ function myExcelFuns() {
             result = result / numberArr.length;
         } else if (document.getElementById("arrMax").checked) {
 
-            for (var i = 0; i < numberArr.length; i++)
-                if (numberArr[i] != "") {
-                    result = Math.max(...numberArr);
-                }
-        } else if (document.getElementById("arrMin").checked) {
+            result = Math.max(...numberArr);
 
-            for (var i = 0; i < numberArr.length; i++)
-                if (numberArr[i] != "") {
-                    result = Math.min(...numberArr);
-                }
         } else {
 
-            return 0;
+            result = Math.min(...numberArr);
+
         }
+
         document.getElementById("result").innerHTML = result;
     } else {
         alert("Please enter a numeric value with spaces to proceed.");
