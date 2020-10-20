@@ -38,17 +38,8 @@ function userForm() {
 function myExcelFuns() {
     var numberStr = document.getElementById("numbers").value;
 
-
-
     numberStr = numberStr.trim();
-    console.log(numberStr);
-
     var numberArr = numberStr.split(" ").map(Number);
-
-    console.log(numberArr);
-
-
-
 
     var total = 0;
     for (var i = 0; i < numberArr.length; i++) {
