@@ -170,7 +170,7 @@ footer {
 
 .popup .show {
     visibility: visible;
-    animation: fadeIn 2s;
+    animation: fadeIn 0.5s;
 }
 
 @-webkit-keyframes fadeIn {
