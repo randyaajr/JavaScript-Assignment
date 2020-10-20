@@ -1,12 +1,7 @@
 function userForm() {
 
-
-
-
-
     var myForm = document.mainform;
     console.log(myForm);
-
 
     var firstname = myForm.fname.value;
     var lastname = myForm.lname.value;
@@ -15,11 +10,9 @@ function userForm() {
     var addressC = myForm.city.value;
     var addressP = myForm.province.value;
 
-
     document.getElementById("fullName").innerHTML = firstname + " " + lastname;
     document.getElementById("email-address").innerHTML = email;
     document.getElementById("address-in").innerHTML = address + " " + addressC + " " + addressP;
-
 
     if (myForm.membership.value == "member1") {
         document.getElementById("memberships").innerHTML = "Premium Membership";
@@ -29,9 +22,6 @@ function userForm() {
     } else {
         document.getElementById("memberships").innerHTML = "Basic Membership";
     }
-
-
-
 }
 
 //Excels section
@@ -69,19 +59,7 @@ function myExcelFuns() {
             }
     } else {
 
-        return false;
+        return 0;
     }
-
-
     document.getElementById("result").innerHTML = result;
-
-    return false;
-
-    /*
-    1. Fixed the code that puts the result into the HTML
-    2. Fixed cpde so when splitted, array converts into a number
-    3. Untilized Math.max(), Math.min() and spread syntax (...).
-    4. Reworked the calculation and assigned the values to each variable
-    */
-
 };
