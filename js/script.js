@@ -39,14 +39,9 @@ function myExcelFuns() {
     var numberStr = document.getElementById("numbers").value;
 
     numberStr = numberStr.trim();
-    var numberArr = numberStr.split(" ").map(Number);
+    var numberArr = numberStr.split(" ");
+    console.log(numberArr);
 
-    var total = 0;
-    for (var i = 0; i < numberArr.length; i++) {
-        if (numberArr[i] != "") {
-            total += parseFloat(numberArr[i]);
-        }
-    }
 
     var result;
     if (document.getElementById("arrSum").checked) {
