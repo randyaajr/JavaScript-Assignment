@@ -58,10 +58,10 @@ function myExcelFuns() {
                 result = result + parseFloat(numberArr[i]);
             }
     } else if (document.getElementById("arrAvg").checked) {
-        result = 0;
+        result = 1;
         for (var i = 0; i < numberArr.length; i++)
             if (numberArr[i] != "") {
-                result = result += numberArr[i] / parseFloat(numberArr[i]);
+                result = result + numberArr[i] / parseFloat(numberArr[i]);
             }
     } else if (document.getElementById("arrMax").checked) {
         result = 0;
