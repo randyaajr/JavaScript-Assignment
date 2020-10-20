@@ -26,7 +26,7 @@ li {
 
 a {
     letter-spacing: 0.2rem;
-    text-shadow: 2px 1px 10px #ff0000;
+    text-shadow: 2px 1px 10px #ff0000bd;
     color: white;
     display: inline-block;
     padding: 1.5rem 0 0;
@@ -66,6 +66,10 @@ h3 {
     padding-bottom: 0.25rem;
 }
 
+#popper {
+    padding-top: 0.25rem;
+}
+
 
 /*********************************************************************************************buttons*/
 
@@ -101,7 +105,12 @@ input[type="reset"]:hover {
 }
 
 a:hover {
-    color: #ff0000;
+    color: #ff0000bd;
+    text-shadow: 1px 1px 5px #ffffffa6;
+}
+
+#popper:hover {
+    color: #ff0000bd;
     text-shadow: 1px 1px 5px #ffffffa6;
 }
 
@@ -129,7 +138,59 @@ footer {
     width: 100%;
     background-image: linear-gradient(to left, rgba(85, 0, 0, 0.356), rgba(51, 51, 51, 0.486));
     letter-spacing: 0.2rem;
-    text-shadow: 2px 1px 10px #ff0000;
+    text-shadow: 2px 1px 10px #ff0000bd;
     color: white;
     text-align: center;
+}
+
+
+/*********************************************************************************************Popup*/
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: rgb(51, 51, 51);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 2s;
+    animation: fadeIn 2s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
