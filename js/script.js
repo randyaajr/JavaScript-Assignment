@@ -22,7 +22,7 @@ function userForm() {
     } else {
         document.getElementById("memberships").innerHTML = "Basic Membership";
     }
-};
+}
 
 //Excels section
 function myExcelFuns() {
@@ -60,7 +60,7 @@ function myExcelFuns() {
     } else {
         alert("Please enter a numeric value with spaces to proceed.");
     }
-};
+}
 
 //Popup
 
