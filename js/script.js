@@ -39,24 +39,32 @@ function myExcelFuns() {
                 if (numberArr[i] != "") {
                     result = result + parseFloat(numberArr[i]);
                 }
+
         } else if (document.getElementById("arrAvg").checked) {
 
+            var count = 0;
             for (var i = 0; i < numberArr.length; i++)
                 if (numberArr[i] != "") {
                     result = result + parseFloat(numberArr[i]);
+                    count++;
                 }
-            result = result / numberArr.length;
+            result = result / count;
+
         } else if (document.getElementById("arrMax").checked) {
 
             result = Math.max(...numberArr);
 
         } else {
 
+
+            numberArr.sort();
             result = Math.min(...numberArr);
+            // result = Math.min(...numberArr);
 
         }
 
         document.getElementById("result").innerHTML = result;
+
     } else {
         alert("Please enter a numeric value with spaces to proceed.");
     }
